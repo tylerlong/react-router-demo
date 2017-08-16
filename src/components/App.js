@@ -11,14 +11,14 @@ const App = () => (
       <ul>
         <li><Link to='/'>Home</Link></li>
         <li><Link to='/about'>About</Link></li>
-        <li><Link to='/topics'>Topics</Link></li>
+        <li><Link to='/topics/main-topic'>Topics</Link></li>
       </ul>
 
       <div className='separator' />
 
       <Route exact path='/' component={Home} />
       <Route path='/about' component={About} />
-      <Route path='/topics' component={Topics} />
+      <Route path='/topics/:main' component={Topics} />
     </div>
   </Router>
 )
